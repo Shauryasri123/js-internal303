@@ -55,11 +55,11 @@
 // let sum = numbers.reduce((acc, num) => acc + num, 0)
 // console.log(numbers, sum)
 
-//let student = {
-    //name: "SHAURYA",
-    //age: 21,
-    //course: "JavaScript"
-}
+// let student = {
+//     name: "SHAURYA",
+//     age: 21,
+//     course: "JavaScript"
+// }
 // console.log(student)
 
 //student.city = "ALLAHABAD"
