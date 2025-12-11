@@ -25,3 +25,8 @@ console.log(typeof(score));
 console.log(typeof score);
 let scoe=Number(score);
 console.log(scoe);
+
+let myDate = new Date();
+console.log(myDate)
+console.log(myDate.toString())
+console.log(myDate.getDate(),"/",myDate.getMonth(),"/",myDate.getFullYear())
