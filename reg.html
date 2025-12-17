@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+        }
+
+        .container {
+            width: 420px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        .gender {
+            margin-bottom: 15px;
+        }
+
+        .terms {
+            margin-bottom: 15px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #2ecc71;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #27ae60;
+        }
+
+        .error {
+            color: red;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .back {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .back a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+        }
+
+        .back a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Student Registration</h2>
+
+    <form id="regForm">
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter your email">
+
+        <label>Gender</label>
+        <div class="gender">
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+        </div>
+
+        <label>Course</label>
+        <select id="course">
+            <option value="">-- Select Course --</option>
+            <option>Java</option>
+            <option>JavaScript</option>
+            <option>Python</option>
+        </select>
+
+        <div class="terms">
+            <input type="checkbox" id="terms"> I agree to Terms & Conditions
+        </div>
+
+        <button type="submit">Register</button>
+
+        <p id="msg" class="error"></p>
+    </form>
+
+    <div class="back">
+        <a href="index.html">← Back to Home</a>
+    </div>
+</div>
+
+<script src="reg.js"></script>
+
+</body>
+</html>

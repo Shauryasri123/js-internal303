@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Project Demo</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+        }
+
+        h1 {
+            margin: 15px 0;
+            color: #2c3e50;
+        }
+
+        hr {
+            border: 1px solid #2ecc71;
+        }
+
+        /* Navigation */
+        .nav {
+            background-color: #2ecc71;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .nav span {
+            margin: 0 15px;
+            cursor: pointer;
+        }
+
+        .nav span:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Layout */
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .box {
+            width: 30%;
+            min-height: 350px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            background-color: white;
+        }
+
+        .left h3,
+        .middle h3,
+        .right h3 {
+            text-align: center;
+            color: #34495e;
+        }
+
+        /* Left */
+        .left {
+            background-color: #e8f8f5;
+        }
+
+        /* Middle */
+        .middle {
+            background-color: #fdf2e9;
+        }
+
+        marquee {
+            height: 250px;
+            padding: 10px;
+        }
+
+        /* Right (Login) */
+        .right {
+            background-color: #ebf5fb;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        input {
+            padding: 5px;
+            width: 150px;
+        }
+
+        button {
+            padding: 6px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        button[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<center><h1>Demo of Online Project</h1></center>
+<hr>
+
+<div class="nav">
+    <span>HOME</span>
+    <span>Gallery</span>
+    <span>Menu3</span>
+    <span>Menu4</span>
+    <span>Menu5</span>
+    <span>Menu6</span>
+</div>
+
+<hr>
+
+<div class="container">
+
+    <!-- Left Section -->
+    <div class="box left">
+        <h3>Menu</h3>
+        <center>
+            Text 1<br><br>
+            Text 2<br><br>
+            Text 3<br><br>
+            Text 4<br><br>
+            Text 5
+        </center>
+    </div>
+
+    <!-- Middle Section -->
+    <div class="box middle">
+        <h3>Important Notices</h3>
+        <marquee direction="up" onmouseover="this.stop()" onmouseout="this.start()">
+            Notice 1<br><br>
+            Notice 2<br><br>
+            Notice 3<br><br>
+            Notice 4<br><br>
+            Notice 5
+        </marquee>
+    </div>
+
+    <!-- Right Section -->
+    <div class="box right">
+        <h3>Login</h3>
+
+        <form>
+            <table>
+                <tr>
+                    <td>User Name</td>
+                    <td><input type="text" placeholder="Username"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Password"></td>
+                </tr>
+            </table>
+
+            <br>
+            <center>
+                <button type="submit">Login</button>
+                <button type="reset">Cancel</button>
+            </center>
+        </form>
+
+        <br>
+        <center>
+            <a href="reg.html">New User / Student Registration</a>
+        </center>
+    </div>
+
+</div>
+
+</body>
+</html>
